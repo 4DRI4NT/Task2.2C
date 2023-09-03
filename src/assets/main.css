@@ -1,0 +1,187 @@
+body {
+  background-color: rgb(255, 241, 225);
+}
+header{
+  background-color: darkolivegreen;
+  height: 6.5vw;
+}
+nav a{
+  background-color: darkolivegreen;
+  float: left;
+  height: 2vw;
+  width: 12%;
+  color: beige;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5vw;
+  font-weight: lighter;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.2vw;
+  transform: translateY(-2.5vw) translateX(28vw);
+}
+nav a:hover {
+  background-color: rgb(71, 89, 39);
+}
+h1 {
+  color: beige;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 5vw;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 4vw;
+}
+h2{
+  color: black;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2vw;
+  font-weight: lighter;
+  margin-top: 3vw;
+  margin-left: 2vw;
+}
+p, li, form{
+  margin-left: 2vw;
+  color: black;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+}
+
+.productTile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: beige;
+  border: solid olive;
+  margin-right: 1vw;
+  h3 {
+    background-color: olive;
+    height: 2.5vw;
+    width: 13vw;
+    color: beige;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8vw;
+    text-align: center;
+    margin-bottom: 0vw;
+    transform: translateY(-1.2vw);
+  }
+  p {
+    font-size: 1vw;
+    margin-top: -1vw;
+  }
+  img {
+    width: 7vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+  button {
+    font-size: 1vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+  }
+}
+.cartList {
+  button {
+  background-color: beige;
+  min-width: 1.7vw;
+  min-height: 1.7vw;
+  border: solid olive;
+  font-size: 1vw;
+  font-weight: bold;
+  margin-left: 0.25vw;
+  }
+  button:hover {
+    background-color: rgb(207, 207, 187);
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+@media screen and (max-width: 650px) {
+  header {
+      width: 97vw;
+      height: 10.5vw;
+  }
+  h1 {
+    width: 97vw;
+    height: 7vw;
+    font-size: 8vw;
+  }
+  h2 {
+    height: 4vw;
+    font-size: 3.2vw;
+    margin-left: 2vw;
+  }
+  .wrapper {
+    transform: translateX(-8.5vw);
+    nav a{
+      height: 4vw;
+      width: 20%;
+      margin-top: 1vw;
+      font-size: 3vw;
+    }
+  }
+  p, li, form{
+    font-size: 3vw;
+  }
+  input, textarea {
+    margin-left: 11vw;
+    width: 60vw;
+  }
+  input.button {
+    margin-left: 38vw;
+    width: 13vw;
+    font-size: 3vw;
+  }
+  table, th, tr, td{
+    border: 0.2vw;
+    height: 4vw;
+    width: 97vw;
+    font-size: 3vw;
+  }
+
+  .productTile {
+    flex-direction: row;
+    justify-content: left;
+    width: 95vw;
+    margin-bottom: 1vw;
+    h3 {
+      height: 4.5vw;
+      width: 20vw;
+      font-size: 3.5vw;
+      text-align: center;
+      margin-top: 2vw;
+      transform: translateY(-1.2vw);
+    }
+    p {
+      font-size: 2.8vw;
+      margin-top: 1.5vw;
+    }
+    img {
+      width: 12vw;
+      margin-top: 0.5vw;
+      margin-bottom: 0.5vw;
+      margin-left: 18vw;
+      margin-right: 3vw;
+    }
+    button {
+      height: 5vw;
+      font-size: 2.8vw;
+      margin-top: 3.8vw;
+    }
+  }
+  .cartList {
+    button {
+    min-width: 4.9vw;
+    min-height: 4.9vw;
+    font-size: 3vw;
+    margin-left: 0.5vw;
+    }
+  }
+  
+  .flex-container {
+    flex-direction: column;
+  }
+}
